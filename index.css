@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    border: 2px solid rgb(252, 252, 252);
+    transition: all 0.25s ease-in-out;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: antiquewhite;
+}
+
+nav { background-color: #372E2D; }
+main { background-color: #5C423E; }
+section { background-color: #AF4C3C; }
+
+aside {
+    background-color: #C9958D;
+    color: #1a1a1a;
+}
+aside h5, aside p { color: #1a1a1a !important; }
+
+footer {
+    background-color: #FF7E6A;
+    color: #1a1a1a;
+}
+footer h5, footer p { color: #1a1a1a !important; }
+
+.altura { min-height: 200px; height: auto; }
+
+/* 1. :first-child y :last-child */
+.demo-grid > *:first-child {
+    border-top: 5px solid #00F5D4 !important;
+    box-shadow: 0 -4px 15px rgba(0, 245, 212, 0.4);
+}
+
+.demo-grid > *:last-child {
+    border-bottom: 5px solid #7209B7 !important;
+    box-shadow: 0 4px 15px rgba(114, 9, 183, 0.4);
+}
+
+/* 2. :nth-child y :nth-last-child */
+.demo-grid > *:nth-child(even) {
+    border-left: 6px solid #F72585 !important;
+}
+
+.demo-grid > *:nth-child(odd) {
+    border-right: 6px solid #4CC9F0 !important;
+}
+
+.demo-grid > *:nth-child(3) {
+    filter: saturate(1.25);
+    outline: 2px dashed #FEE440;
+}
+
+.demo-grid > *:nth-last-child(2) {
+    outline: 2px dashed #00BBF9;
+}
+
+/* 3. :first-of-type y :last-of-type */
+section:first-of-type {
+    background: linear-gradient(135deg, #AF4C3C 0%, #C75D4C 100%);
+}
+aside:first-of-type {
+    background: linear-gradient(135deg, #C9958D 0%, #D8A49C 100%);
+}
+section:last-of-type {
+    background: linear-gradient(135deg, #8A3B2E 0%, #AF4C3C 100%);
+}
+aside:last-of-type {
+    background: linear-gradient(135deg, #B57F77 0%, #C9958D 100%);
+}
+
+/* 4. :nth-of-type y :nth-last-of-type */
+section:nth-of-type(3) {
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+section:nth-last-of-type(2) {
+    box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+/* 5. :only-of-type */
+nav:only-of-type { letter-spacing: 0.5px; }
+main:only-of-type { border-top: 3px double #FEE440; border-bottom: 3px double #FEE440; }
+footer:only-of-type { font-weight: 500; }
+
+/* 6. :only-child */
+.only-child-container > *:only-child {
+    background-color: #2B2D42;
+    color: #FEE440;
+    border: 2px solid #FEE440;
+    padding: 6px 12px;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: bold;
+    animation: brilloOnlyChild 2s infinite alternate;
+}
+
+@keyframes brilloOnlyChild {
+    from { box-shadow: 0 0 5px rgba(254, 228, 64, 0.4); }
+    to { box-shadow: 0 0 15px rgba(254, 228, 64, 0.9); }
+}
+
+/* 7. :empty */
+.empty-box:empty {
+    height: 35px;
+    background: repeating-linear-gradient(
+        45deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2) 10px,
+        rgba(255, 255, 255, 0.15) 10px,
+        rgba(255, 255, 255, 0.15) 20px
+    );
+    border: 2px dashed rgba(255, 255, 255, 0.6);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.empty-box:empty::before {
+    content: "« Elemento :empty detectado »";
+    font-size: 0.72rem;
+    color: #FFE66D;
+    font-weight: bold;
+}
+
+/* 8. :not() */
+.demo-grid > *:not(nav):not(footer):hover {
+    transform: scale(1.02);
+    z-index: 10;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+}
+
+.demo-grid > *:active {
+    transform: scale(0.98);
+}
+
+.selector-badge {
+    background: rgba(0, 0, 0, 0.55);
+    color: #00F5D4;
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.structural-tag {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 2px 10px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    width: fit-content;
+}

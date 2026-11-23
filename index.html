@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetación 2 - Pseudo-clases Estructurales y de Árbol</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container-fluid py-3">
+        <div class="row g-2 demo-grid">
+
+           
+            <nav class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-12 col-xxl-12 altura p-3 text-white">
+                <div class="d-flex flex-wrap justify-content-between align-items-center h-100">
+                    <div>
+                        <span class="selector-badge"></span>
+                        <h4 class="m-0 mt-1">Soy Nav</h4>
+                        <small class="opacity-75"></small>
+                    </div>
+                    <div class="structural-tag"></div>
+                </div>
+            </nav>
+            
+           
+            <section class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3 altura p-3 text-white">
+                <div class="h-100 d-flex flex-column justify-content-between">
+                    <div>
+                        <span class="selector-badge"></span>
+                        <h5 class="m-0 mt-1">Soy Section </h5>
+                    </div>
+                    <p class="small m-0"></code></p>
+                    <div class="structural-tag"></div>
+                </div>
+            </section>
+
+           
+            <section class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-3 col-xxl-3 altura p-3 text-white">
+                <div class="h-100 d-flex flex-column justify-content-between">
+                    <div>
+                        <span class="selector-badge"></span>
+                        <h5 class="m-0 mt-1">Soy Section </h5>
+                    </div>
+                    <p class="small m-0"></code></p>
+                    <div class="structural-tag"></div>
+                </div>
+            </section>
+
+           
+            <aside class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3 altura p-3">
+                <div class="h-100 d-flex flex-column justify-content-between">
+                    <div>
+                        <span class="selector-badge"></span>
+                        <h5 class="m-0 mt-1">Soy Aside </h5>
+                    </div>
+                    <div class="only-child-container p-2 rounded">
+                        <span class="single-badge"></span>
+                    </div>
+                    <div class="structural-tag"></div>
+                </div>
+            </aside>
+
+            <section class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3 altura p-3 text-white">
+                <div class="h-100 d-flex flex-column justify-content-between">
+                    <div>
+                        <span class="selector-badge"></span>
+                        <h5 class="m-0 mt-1">Soy Section </h5>
+                    </div>
+                    <div class="empty-box" title="Elemento con :empty (sin contenido interno)"></div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <small class="small-info"></small>
+                        <div class="structural-tag"></div>
+                    </div>
+                </div>
+            </section>
+
+            
+            <main class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-12 col-xxl-12 altura p-3 text-white">
+                <div class="d-flex flex-wrap justify-content-between align-items-center h-100">
+                    <div>
+                        <span class="selector-badge"></span>
+                        <h4 class="m-0 mt-1">Soy Main</h4>
+                        <p class="small m-0"></p>
+                    </div>
+                    <div class="structural-tag"></div>
+                </div>
+            </main>
+
+            
+            <section class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3 altura p-3 text-white">
+                <div class="h-100 d-flex flex-column justify-content-between">
+                    <div>
+                        <span class="selector-badge"></span>
+                        <h5 class="m-0 mt-1">Soy Section </h5>
+                    </div>
+                    <p class="small m-0"></p>
+                    <div class="structural-tag"></div>
+                </div>
+            </section>
+
+
+            <aside class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3 altura p-3">
+                <div class="h-100 d-flex flex-column justify-content-between">
+                    <div>
+                        <span class="selector-badge"></span>
+                        <h5 class="m-0 mt-1">Soy Aside </h5>
+                    </div>
+                    <p class="small m-0"></p>
+                    <div class="structural-tag"></div>
+                </div>
+            </aside>
+
+            <section class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3 altura p-3 text-white">
+                <div class="h-100 d-flex flex-column justify-content-between">
+                    <div>
+                        <span class="selector-badge"></span>
+                        <h5 class="m-0 mt-1">Soy Section </h5>
+                    </div>
+                    <p class="small m-0"></p>
+                    <div class="structural-tag"></div>
+                </div>
+            </section>
+
+            <footer class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3 altura p-3">
+                <div class="h-100 d-flex flex-column justify-content-between">
+                    <div>
+                        <span class="selector-badge"></span>
+                        <h5 class="m-0 mt-1">Soy Footer</h5>
+                    </div>
+                    <p class="small m-0"></p>
+                    <div class="structural-tag"></div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
